@@ -57,3 +57,29 @@ ALL_SIZE = data_hsi.shape[0] * data_hsi.shape[1]
 VAL_SIZE = int(TRAIN_SIZE)
 TEST_SIZE = TOTAL_SIZE - TRAIN_SIZE
 SAMPLES_NUM = 200
+
+KAPPA = []
+OA = []
+AA = []
+TRAINING_TIME = []
+TESTING_TIME = []
+ELEMENT_ACC = np.zeros((ITER, CLASSES_NUM))
+
+
+data = preprocessing.scale(data)
+whole_data = data.reshape(data_hsi.shape[0], data_hsi.shape[1], data_hsi.shape[2])
+padded_data = np.lib.pad(whole_data, ((PATCH_LENGTH, PATCH_LENGTH), (PATCH_LENGTH, PATCH_LENGTH), (0, 0)),
+                         'constant', constant_values=0)
+
+for index_iter in range(ITER):
+    print('-----Begining to conduct the ' + str(index_iter + 1) + ' iter training process-----')
+    net = network.HResNetAM(BAND, CLASSES_NUM)
+    optimizer = optim.Adam(net.parameters(), lr=lr)
+    time_1 = int(time.time())
+    np.random.seed(seeds[index_iter])
+    train_indices, test_indices = sampling1(SAMPLES_NUM, gt)
+    _, total_indices = sampling2(gt, 1)
+    
+    TRAIN_SIZE = len(train_indices)
+    print('Train size: ', TRAIN_SIZE)
+    TEST_SIZE = TOTAL_SIZE - TRAIN_SIZE
