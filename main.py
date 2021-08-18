@@ -83,3 +83,30 @@ for index_iter in range(ITER):
     TRAIN_SIZE = len(train_indices)
     print('Train size: ', TRAIN_SIZE)
     TEST_SIZE = TOTAL_SIZE - TRAIN_SIZE
+    print('Test size: ', TEST_SIZE)
+    VAL_SIZE = int(TRAIN_SIZE)
+    print('Validation size: ', VAL_SIZE)
+    
+    print('-----Selecting Small Pieces from the Original Cube Data-----')
+    train_iter, valida_iter, test_iter, all_iter = generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE, total_indices, VAL_SIZE,
+                  whole_data, PATCH_LENGTH, padded_data, INPUT_DIMENSION, batch_size, gt)
+    
+    print('-----Begining to Train The Model with Training Dataset-----')
+    tic1 = time.clock()
+    train.train(net, train_iter, valida_iter, loss, optimizer, device, epochs=num_epochs)
+    toc1 = time.clock()
+    
+    pred_test = []
+    tic2 = time.clock()
+    with torch.no_grad():
+        for X, y in test_iter:
+            X = X.to(device)
+            net.eval()
+            y_hat = net(X)
+            pred_test.extend(np.array(net(X).cpu().argmax(axis=1)))
+    toc2 = time.clock()
+    collections.Counter(pred_test)
+    gt_test = gt[test_indices] - 1
+    
+    overall_acc = metrics.accuracy_score(pred_test, gt_test[:-VAL_SIZE])
+    confusion_matrix = metrics.confusion_matrix(pred_test, gt_test[:-VAL_SIZE])
