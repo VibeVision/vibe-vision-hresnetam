@@ -110,3 +110,19 @@ for index_iter in range(ITER):
     
     overall_acc = metrics.accuracy_score(pred_test, gt_test[:-VAL_SIZE])
     confusion_matrix = metrics.confusion_matrix(pred_test, gt_test[:-VAL_SIZE])
+    each_acc, average_acc = aa_and_each_accuracy(confusion_matrix)
+    kappa = metrics.cohen_kappa_score(pred_test, gt_test[:-VAL_SIZE])
+    
+    torch.save(net.state_dict(), "./models/" + str(round(overall_acc, 3)) + '.pt')
+    KAPPA.append(kappa)
+    OA.append(overall_acc)
+    AA.append(average_acc)
+    TRAINING_TIME.append(toc1 - tic1)
+    TESTING_TIME.append(toc2 - tic2)
+    ELEMENT_ACC[index_iter, :] = each_acc
+    
+print("--------" + net.name + " Training Finished-----------")
+record.record_output(OA, AA, KAPPA, ELEMENT_ACC, TRAINING_TIME, TESTING_TIME,
+                     'records/' + net.name + 'Patch'+ str(2*PATCH_LENGTH+1) + 'Time' + day_str + '_' + Dataset + 'TrainingSamples' + str(SAMPLES_NUM) + 'lr：' + str(lr) + '.txt')
+
+generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices)
