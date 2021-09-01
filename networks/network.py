@@ -96,3 +96,32 @@ class HResNetAM(nn.Module):
         self.conv223 = nn.Conv3d(in_channels=12, out_channels=6, padding=(1, 1, 0), kernel_size=(3, 3, 1), stride=(1, 1, 1))
         self.batch_norm223 = nn.Sequential(nn.BatchNorm3d(6, eps=0.001, momentum=0.1, affine=True), mish())
         
+        self.conv224 = nn.Conv3d(in_channels=12, out_channels=6, padding=(1, 1, 0), kernel_size=(3, 3, 1), stride=(1, 1, 1))
+        self.batch_norm22 = nn.Sequential(nn.BatchNorm3d(24, eps=0.001, momentum=0.1, affine=True), mish())
+        
+        self.attention_spectral = CAM_Module(24)
+        self.attention_spatial = PAM_Module(24)
+        
+        self.batch_norm_spectral = nn.Sequential(nn.BatchNorm3d(24,  eps=0.001, momentum=0.1, affine=True), mish(), nn.Dropout(p=0.5))
+        self.batch_norm_spatial = nn.Sequential(nn.BatchNorm3d(24,  eps=0.001, momentum=0.1, affine=True), mish(), nn.Dropout(p=0.5))
+        
+        self.global_pooling = nn.AdaptiveAvgPool3d(1)
+        self.full_connection = nn.Sequential(nn.Linear(48, classes))
+        
+    def forward(self, X):
+        
+        X11 = self.conv11(X)
+        X11 = self.batch_norm11(X11)
+
+        XS1 = torch.chunk(X11,4,dim=1)
+        X121 = XS1[0]
+        X122 = self.conv122(XS1[1])
+        X122 = self.batch_norm122(X122)
+        X123 = torch.cat((X122, XS1[2]), dim=1)
+        X123 = self.conv123(X123)
+        X123 = self.batch_norm123(X123)
+        X124 = torch.cat((X123, XS1[3]), dim=1)
+        X124 = self.conv124(X124)
+        X12 = torch.cat((X121, X122, X123, X124), dim=1)
+        X12 = self.batch_norm12(X12)
+        X13 = self.conv13(X12)
