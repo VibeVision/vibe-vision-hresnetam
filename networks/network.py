@@ -125,3 +125,33 @@ class HResNetAM(nn.Module):
         X12 = torch.cat((X121, X122, X123, X124), dim=1)
         X12 = self.batch_norm12(X12)
         X13 = self.conv13(X12)
+        
+        X1 = self.attention_spectral(X13)
+        X1 = torch.mul(X1, X13)
+        
+
+        X21 = self.conv21(X)
+        X21 = self.batch_norm21(X21)
+
+        XS2 = torch.chunk(X21,4,dim=1)
+        X221 = XS2[0]
+        X222 = self.conv222(XS2[1])
+        X222 = self.batch_norm222(X222)
+        
+        X223 = torch.cat((X222, XS2[2]), dim=1)
+        X223 = self.conv223(X223)
+        X223 = self.batch_norm223(X223)
+        
+        X224 = torch.cat((X223, XS2[3]), dim=1)
+        X224 = self.conv224(X224)
+        X22 = torch.cat((X221, X222, X223, X224), dim=1)
+        X22 = self.batch_norm22(X22)
+        
+        X2 = self.attention_spatial(X22)
+        X2 = torch.mul(X2, X22)
+        
+        X1 = self.batch_norm_spectral(X1)
+        X1 = self.global_pooling(X1)
+        X1 = X1.squeeze(-1).squeeze(-1).squeeze(-1)
+        X2 = self.batch_norm_spatial(X2)
+        X2= self.global_pooling(X2)
