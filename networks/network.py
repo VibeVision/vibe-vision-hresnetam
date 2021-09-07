@@ -155,3 +155,22 @@ class HResNetAM(nn.Module):
         X1 = X1.squeeze(-1).squeeze(-1).squeeze(-1)
         X2 = self.batch_norm_spatial(X2)
         X2= self.global_pooling(X2)
+        X2 = X2.squeeze(-1).squeeze(-1).squeeze(-1)
+
+        X_pre = torch.cat((X1, X2), dim=1)
+        
+        output = self.full_connection(X_pre)
+        return output
+
+
+
+
+
+
+
+
+
+
+
+
+
