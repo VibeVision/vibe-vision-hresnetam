@@ -89,3 +89,28 @@ def train(net, train_iter, valida_iter, loss, optimizer, device, epochs=30, earl
     d2l.plt.figure(figsize=(8, 8.5))
     train_accuracy = d2l.plt.subplot(221)
     train_accuracy.set_title('train_accuracy')
+    d2l.plt.plot(np.linspace(1, epoch, len(train_acc_list)), train_acc_list, color='green')
+    d2l.plt.xlabel('epoch')
+    d2l.plt.ylabel('train_accuracy')
+
+    test_accuracy = d2l.plt.subplot(222)
+    test_accuracy.set_title('valida_accuracy')
+    d2l.plt.plot(np.linspace(1, epoch, len(valida_acc_list)), valida_acc_list, color='deepskyblue')
+    d2l.plt.xlabel('epoch')
+    d2l.plt.ylabel('test_accuracy')
+
+    loss_sum = d2l.plt.subplot(223)
+    loss_sum.set_title('train_loss')
+    d2l.plt.plot(np.linspace(1, epoch, len(valida_acc_list)), valida_acc_list, color='red')
+    d2l.plt.xlabel('epoch')
+    d2l.plt.ylabel('train loss')
+
+    test_loss = d2l.plt.subplot(224)
+    test_loss.set_title('valida_loss')
+    d2l.plt.plot(np.linspace(1, epoch, len(valida_loss_list)), valida_loss_list, color='gold')
+    d2l.plt.xlabel('epoch')
+    d2l.plt.ylabel('valida loss')
+
+    d2l.plt.show()
+    print('epoch %d, loss %.4f, train acc %.3f, time %.1f sec'
+            % (epoch + 1, train_l_sum / batch_count, train_acc_sum / n, time.time() - start))
