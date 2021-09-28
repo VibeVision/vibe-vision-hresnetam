@@ -55,3 +55,37 @@ def train(net, train_iter, valida_iter, loss, optimizer, device, epochs=30, earl
 
             optimizer.zero_grad()
             l.backward()
+            optimizer.step()
+            train_l_sum += l.cpu().item()
+            train_acc_sum += (y_hat.argmax(dim=1) == y).sum().cpu().item()
+            n += y.shape[0]
+            batch_count += 1
+        lr_adjust.step(epoch)
+        valida_acc, valida_loss = evaluate_accuracy(valida_iter, net, loss, device)
+        loss_list.append(valida_loss)
+
+        train_loss_list.append(train_l_sum)
+        train_acc_list.append(train_acc_sum / n)
+        valida_loss_list.append(valida_loss)
+        valida_acc_list.append(valida_acc)
+
+        print('epoch %d, train loss %.6f, train acc %.3f, valida loss %.6f, valida acc %.3f, time %.1f sec'
+                % (epoch + 1, train_l_sum / batch_count, train_acc_sum / n, valida_loss, valida_acc, time.time() - time_epoch))
+
+        PATH = "./net_DBA.pt"
+
+        if early_stopping and loss_list[-2] < loss_list[-1]:
+            if early_epoch == 0:
+                torch.save(net.state_dict(), PATH)
+            early_epoch += 1
+            loss_list[-1] = loss_list[-2]
+            if early_epoch == early_num:
+                net.load_state_dict(torch.load(PATH))
+                break
+        else:
+            early_epoch = 0
+
+    d2l.set_figsize()
+    d2l.plt.figure(figsize=(8, 8.5))
+    train_accuracy = d2l.plt.subplot(221)
+    train_accuracy.set_title('train_accuracy')
