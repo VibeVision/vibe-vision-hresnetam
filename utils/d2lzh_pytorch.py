@@ -12,4 +12,5 @@ import random
 import sys
 import tarfile
 import time
-import zip
+import zipfile
+from tqdm 
