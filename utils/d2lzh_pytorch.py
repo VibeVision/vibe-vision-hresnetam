@@ -13,4 +13,6 @@ import sys
 import tarfile
 import time
 import zipfile
-from tqdm 
+from tqdm import tqdm
+
+from IPython 
