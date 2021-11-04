@@ -15,4 +15,6 @@ import time
 import zipfile
 from tqdm import tqdm
 
-from IPython 
+from IPython import display
+
+from matplotlib
