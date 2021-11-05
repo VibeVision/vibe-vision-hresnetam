@@ -17,4 +17,5 @@ from tqdm import tqdm
 
 from IPython import display
 
-from matplotlib
+from matplotlib import pyplot as plt
+i
