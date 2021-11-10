@@ -20,4 +20,5 @@ from IPython import display
 from matplotlib import pyplot as plt
 import torch
 from torch import nn
-import torch
+import torch.nn.functional as F
+import tor
