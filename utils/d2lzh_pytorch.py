@@ -22,4 +22,4 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 import torchvision
-import torchvisi
+import torchvision.transforms as transform
