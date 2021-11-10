@@ -24,4 +24,4 @@ import torch.nn.functional as F
 import torchvision
 import torchvision.transforms as transforms
 import torchtext
-import t
+import torchtext.vocab as Vocab
