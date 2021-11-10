@@ -28,4 +28,4 @@ import torchtext.vocab as Vocab
 import numpy as np
 
 
-VOC_CLASSES
+VOC_CLASSES = ['background', 'aeropla
