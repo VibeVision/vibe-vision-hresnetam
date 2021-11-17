@@ -30,4 +30,4 @@ import numpy as np
 
 VOC_CLASSES = ['background', 'aeroplane', 'bicycle', 'bird', 'boat',
                'bottle', 'bus', 'car', 'cat', 'chair', 'cow',
-               'diningt
+               'diningtable', 'dog', 'horse', 'motorb
