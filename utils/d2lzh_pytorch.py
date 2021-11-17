@@ -29,4 +29,4 @@ import numpy as np
 
 
 VOC_CLASSES = ['background', 'aeroplane', 'bicycle', 'bird', 'boat',
- 
+               'bottle', 'bus'
