@@ -34,4 +34,4 @@ VOC_CLASSES = ['background', 'aeroplane', 'bicycle', 'bird', 'boat',
                'potted plant', 'sheep', 'sofa', 'train', 'tv/monitor']
 
 
-VOC_COLORMAP = [[0, 0, 0], [128, 0, 0], [0
+VOC_COLORMAP = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0],
