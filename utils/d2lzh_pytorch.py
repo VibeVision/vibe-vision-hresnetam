@@ -46,4 +46,7 @@ VOC_COLORMAP = [[0, 0, 0], [128, 0, 0], [0, 128, 0], [128, 128, 0],
 # ###################### 3.2 ############################
 def set_figsize(figsize=(3.5, 2.5)):
     use_svg_display()
-    plt.rcParams['figure.figsize'] = figs
+    plt.rcParams['figure.figsize'] = figsize
+
+def use_svg_display():
+    di
