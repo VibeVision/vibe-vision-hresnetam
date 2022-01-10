@@ -49,4 +49,4 @@ def set_figsize(figsize=(3.5, 2.5)):
     plt.rcParams['figure.figsize'] = figsize
 
 def use_svg_display():
-    display.set_matplotlib_fo
+    display.set_matplotlib_formats('svg')
