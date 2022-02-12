@@ -8,4 +8,5 @@ Created on Wed Oct 21 21:10:24 2020
 import numpy as np
 
 
-def index_assignment(index
+def index_assignment(index, row, col, pad_length):
+    new
