@@ -13,4 +13,4 @@ def index_assignment(index, row, col, pad_length):
     for counter, value in enumerate(index):
         assign_0 = value // col + pad_length
         assign_1 = value % col + pad_length
-        new_assign[c
+        new_assign[counter] = [assign_0, assign
