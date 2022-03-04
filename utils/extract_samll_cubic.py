@@ -22,4 +22,5 @@ def assignment_index(assign_0, assign_1, col):
     return new_index
 
 
-def select_patch(matrix, pos_row, p
+def select_patch(matrix, pos_row, pos_col, ex_len):
+    selected_rows = 
