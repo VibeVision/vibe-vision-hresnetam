@@ -22,4 +22,4 @@ def assignment_index(assign_0, assign_1, col):
     return new_index
 
 
-def selec
+def select_patch(matrix, pos_row, p
