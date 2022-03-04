@@ -17,4 +17,4 @@ def index_assignment(index, row, col, pad_length):
     return new_assign
 
 
-def as
+def assignment_index(assign_0, assig
