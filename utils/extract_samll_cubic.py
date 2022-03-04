@@ -23,4 +23,4 @@ def assignment_index(assign_0, assign_1, col):
 
 
 def select_patch(matrix, pos_row, pos_col, ex_len):
-    selected_rows = 
+    selected_rows = matrix[range(pos_row-ex_len, pos_row+e
