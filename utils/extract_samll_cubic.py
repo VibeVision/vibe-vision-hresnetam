@@ -18,4 +18,4 @@ def index_assignment(index, row, col, pad_length):
 
 
 def assignment_index(assign_0, assign_1, col):
-    new_index = as
+    new_index = assign_0 * col + assign_1
