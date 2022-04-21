@@ -29,4 +29,4 @@ def select_patch(matrix, pos_row, pos_col, ex_len):
 
 
 def select_small_cubic(data_size, data_indices, whole_data, patch_length, padded_data, dimension):
-    small_cubic_data = np.zeros((data_size, 2 * pa
+    small_cubic_data = np.zeros((data_size, 2 * patch_length + 1, 2 * patch
