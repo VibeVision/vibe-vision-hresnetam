@@ -28,4 +28,5 @@ def select_patch(matrix, pos_row, pos_col, ex_len):
     return selected_patch
 
 
-def select_small_cubic(data_size, data_indices, whole_data, patch_length, padded_data, dimensi
+def select_small_cubic(data_size, data_indices, whole_data, patch_length, padded_data, dimension):
+    small_cubic_data
