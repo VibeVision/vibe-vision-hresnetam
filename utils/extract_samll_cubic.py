@@ -32,4 +32,4 @@ def select_small_cubic(data_size, data_indices, whole_data, patch_length, padded
     small_cubic_data = np.zeros((data_size, 2 * patch_length + 1, 2 * patch_length + 1, dimension))
     data_assign = index_assignment(data_indices, whole_data.shape[0], whole_data.shape[1], patch_length)
     for i in range(len(data_assign)):
-        small_cubic_
+        small_cubic_data[i] = select_patch(p
