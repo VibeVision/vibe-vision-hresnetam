@@ -33,4 +33,4 @@ def select_small_cubic(data_size, data_indices, whole_data, patch_length, padded
     data_assign = index_assignment(data_indices, whole_data.shape[0], whole_data.shape[1], patch_length)
     for i in range(len(data_assign)):
         small_cubic_data[i] = select_patch(padded_data, data_assign[i][0], data_assign[i][1], patch_length)
-    return sm
+    return small_cubic_data
