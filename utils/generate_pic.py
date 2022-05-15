@@ -7,4 +7,5 @@ Created on Wed Oct 21 21:10:24 2020
 
 import numpy as np
 import matplotlib.pyplot as plt
-from operator import tr
+from operator import truediv
+import scipy.io as si
