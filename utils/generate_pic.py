@@ -12,4 +12,6 @@ import scipy.io as sio
 import torch
 import math
 import h5py
-import torch.ut
+import torch.utils.data as Data
+
+import extract_samll_cubic
