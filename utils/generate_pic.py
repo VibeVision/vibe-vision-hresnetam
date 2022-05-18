@@ -15,3 +15,5 @@ import h5py
 import torch.utils.data as Data
 
 import extract_samll_cubic
+
+def load_dataset(Dat
