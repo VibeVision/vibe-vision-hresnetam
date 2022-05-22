@@ -17,4 +17,5 @@ import torch.utils.data as Data
 import extract_samll_cubic
 
 def load_dataset(Dataset):
-    if Dataset =
+    if Dataset == 'PC':
+        uPavia = sio.loadmat
