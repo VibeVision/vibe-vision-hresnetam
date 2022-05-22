@@ -19,4 +19,5 @@ import extract_samll_cubic
 def load_dataset(Dataset):
     if Dataset == 'PC':
         uPavia = sio.loadmat('../datasets/Pavia.mat')
-        gt_uPavia = sio.loadmat('../datasets/Pavia_gt.
+        gt_uPavia = sio.loadmat('../datasets/Pavia_gt.mat')
+        data_hsi =
