@@ -21,4 +21,4 @@ def load_dataset(Dataset):
         uPavia = sio.loadmat('../datasets/Pavia.mat')
         gt_uPavia = sio.loadmat('../datasets/Pavia_gt.mat')
         data_hsi = uPavia['pavia']
-   
+        gt_hsi = gt_uPavia['pavia_
