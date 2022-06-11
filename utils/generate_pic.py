@@ -22,4 +22,5 @@ def load_dataset(Dataset):
         gt_uPavia = sio.loadmat('../datasets/Pavia_gt.mat')
         data_hsi = uPavia['pavia']
         gt_hsi = gt_uPavia['pavia_gt']
-        TOTAL_SIZE = 14
+        TOTAL_SIZE = 148152
+        VALIDATION_SPLI
