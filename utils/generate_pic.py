@@ -23,4 +23,5 @@ def load_dataset(Dataset):
         data_hsi = uPavia['pavia']
         gt_hsi = gt_uPavia['pavia_gt']
         TOTAL_SIZE = 148152
-        VALIDATION_SPLI
+        VALIDATION_SPLIT = 0.999
+        TRAIN_SIZE = math.c
