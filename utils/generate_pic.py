@@ -29,4 +29,5 @@ def load_dataset(Dataset):
     if Dataset == 'DFC2013':
         HS = sio.loadmat('../datasets/DFC2013_Houston.mat')
         gt_HS = sio.loadmat('../datasets/DFC2013_Houston_gt.mat')
-        data_hsi 
+        data_hsi = HS['DFC2013_Houston']
+        
