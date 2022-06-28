@@ -28,4 +28,4 @@ def load_dataset(Dataset):
         
     if Dataset == 'DFC2013':
         HS = sio.loadmat('../datasets/DFC2013_Houston.mat')
-        g
+        gt_HS = sio.loadmat('
