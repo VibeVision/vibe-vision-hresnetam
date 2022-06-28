@@ -27,4 +27,4 @@ def load_dataset(Dataset):
         TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
         
     if Dataset == 'DFC2013':
-        HS =
+        HS = sio.loadmat('../datasets/DFC
