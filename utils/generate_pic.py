@@ -26,4 +26,5 @@ def load_dataset(Dataset):
         VALIDATION_SPLIT = 0.999
         TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
         
-    if Dataset == 'DFC
+    if Dataset == 'DFC2013':
+        HS =
