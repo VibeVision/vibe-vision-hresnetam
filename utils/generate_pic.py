@@ -34,4 +34,5 @@ def load_dataset(Dataset):
         TOTAL_SIZE = 15029
         VALIDATION_SPLIT = 0.9
         TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
-  
+    
+    if Dataset == 'DN':
