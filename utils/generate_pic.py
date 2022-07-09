@@ -32,4 +32,5 @@ def load_dataset(Dataset):
         data_hsi = HS['DFC2013_Houston']
         gt_hsi = gt_HS['DFC2013_Houston_gt']
         TOTAL_SIZE = 15029
-        VALIDATION_
+        VALIDATION_SPLIT = 0.9
+        T
