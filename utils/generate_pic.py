@@ -30,4 +30,5 @@ def load_dataset(Dataset):
         HS = sio.loadmat('../datasets/DFC2013_Houston.mat')
         gt_HS = sio.loadmat('../datasets/DFC2013_Houston_gt.mat')
         data_hsi = HS['DFC2013_Houston']
-        gt_hsi = gt_HS['DFC2013_Hous
+        gt_hsi = gt_HS['DFC2013_Houston_gt']
+        TOTAL_SIZE = 1502
