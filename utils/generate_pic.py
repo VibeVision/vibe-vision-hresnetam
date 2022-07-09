@@ -33,4 +33,4 @@ def load_dataset(Dataset):
         gt_hsi = gt_HS['DFC2013_Houston_gt']
         TOTAL_SIZE = 15029
         VALIDATION_SPLIT = 0.9
-        T
+        TRAIN_SIZE = math.ceil(TOTAL_SIZ
