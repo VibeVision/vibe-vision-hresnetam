@@ -36,4 +36,5 @@ def load_dataset(Dataset):
         TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
     
     if Dataset == 'DN':
-        DN = sio.loadmat('..
+        DN = sio.loadmat('../datasets/Dioni.mat')
+      
