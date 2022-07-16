@@ -38,4 +38,5 @@ def load_dataset(Dataset):
     if Dataset == 'DN':
         DN = sio.loadmat('../datasets/Dioni.mat')
         gt_DN = sio.loadmat('../datasets/Dioni_gt.mat')
-      
+        data_hsi = DN['Dioni']
+        gt
