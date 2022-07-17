@@ -40,4 +40,5 @@ def load_dataset(Dataset):
         gt_DN = sio.loadmat('../datasets/Dioni_gt.mat')
         data_hsi = DN['Dioni']
         gt_hsi = gt_DN['Dioni_gt']
+        TOTAL_SIZE = 20024
    
