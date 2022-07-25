@@ -42,4 +42,6 @@ def load_dataset(Dataset):
         gt_hsi = gt_DN['Dioni_gt']
         TOTAL_SIZE = 20024
         VALIDATION_SPLIT = 0.9
-        TRAIN_SIZE = math.ceil(TOTAL_SIZE * VAL
+        TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
+
+    if Datase
