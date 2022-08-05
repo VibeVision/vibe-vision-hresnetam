@@ -48,4 +48,4 @@ def load_dataset(Dataset):
         DFC = sio.loadmat('../datasets/DFC2018_Houston.mat')
         gt_DFC = sio.loadmat('../datasets/DFC2018_Houston_gt.mat')
         data_hsi = DFC['DFC2018_Houston']
-        gt_hsi 
+        gt_hsi = gt_DFC['DFC2018_Hou
