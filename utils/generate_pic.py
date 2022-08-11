@@ -49,4 +49,5 @@ def load_dataset(Dataset):
         gt_DFC = sio.loadmat('../datasets/DFC2018_Houston_gt.mat')
         data_hsi = DFC['DFC2018_Houston']
         gt_hsi = gt_DFC['DFC2018_Houston_gt']
-        TOTAL
+        TOTAL_SIZE = 504712
+        VALIDAT
