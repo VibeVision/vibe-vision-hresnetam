@@ -50,4 +50,5 @@ def load_dataset(Dataset):
         data_hsi = DFC['DFC2018_Houston']
         gt_hsi = gt_DFC['DFC2018_Houston_gt']
         TOTAL_SIZE = 504712
-        VALIDAT
+        VALIDATION_SPLIT = 0.9
+        TRAIN_SIZE = ma
