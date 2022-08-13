@@ -51,4 +51,6 @@ def load_dataset(Dataset):
         gt_hsi = gt_DFC['DFC2018_Houston_gt']
         TOTAL_SIZE = 504712
         VALIDATION_SPLIT = 0.9
-        TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION
+        TRAIN_SIZE = math.ceil(TOTAL_SIZE * VALIDATION_SPLIT)
+
+def save_cmap(i
