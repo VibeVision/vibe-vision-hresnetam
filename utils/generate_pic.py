@@ -56,4 +56,6 @@ def load_dataset(Dataset):
 def save_cmap(img, cmap, fname):
     sizes = np.shape(img)
     height = float(sizes[0])
-    wid
+    width = float(sizes[1])
+
+ 
