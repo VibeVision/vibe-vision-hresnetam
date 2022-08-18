@@ -58,4 +58,5 @@ def save_cmap(img, cmap, fname):
     height = float(sizes[0])
     width = float(sizes[1])
 
- 
+    fig = plt.figure()
+    fig
