@@ -64,4 +64,5 @@ def save_cmap(img, cmap, fname):
     ax.set_axis_off()
     fig.add_axes(ax)
 
-    ax.imshow(img, cmap=
+    ax.imshow(img, cmap=cmap)
+    plt.savefig(
