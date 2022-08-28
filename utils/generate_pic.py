@@ -67,3 +67,5 @@ def save_cmap(img, cmap, fname):
     ax.imshow(img, cmap=cmap)
     plt.savefig(fname, dpi=height)
     plt.close()
+
+def sampling1(samples_num,
