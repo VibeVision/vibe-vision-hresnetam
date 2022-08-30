@@ -68,4 +68,5 @@ def save_cmap(img, cmap, fname):
     plt.savefig(fname, dpi=height)
     plt.close()
 
-def sampling1(samples_num,
+def sampling1(samples_num, ground_truth):
+    train = {
