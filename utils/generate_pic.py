@@ -69,4 +69,6 @@ def save_cmap(img, cmap, fname):
     plt.close()
 
 def sampling1(samples_num, ground_truth):
-    train = {
+    train = {}
+    test = {}
+    labels_
