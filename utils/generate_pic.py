@@ -71,4 +71,5 @@ def save_cmap(img, cmap, fname):
 def sampling1(samples_num, ground_truth):
     train = {}
     test = {}
-    labels_
+    labels_loc = {}
+    m = max(groun
