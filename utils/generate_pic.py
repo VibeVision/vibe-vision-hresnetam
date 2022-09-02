@@ -72,4 +72,5 @@ def sampling1(samples_num, ground_truth):
     train = {}
     test = {}
     labels_loc = {}
-    m = max(groun
+    m = max(ground_truth)
+    for i in 
