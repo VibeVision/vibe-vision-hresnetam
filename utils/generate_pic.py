@@ -73,4 +73,5 @@ def sampling1(samples_num, ground_truth):
     test = {}
     labels_loc = {}
     m = max(ground_truth)
-    for i in 
+    for i in range(m):
+        indexes = [j 
