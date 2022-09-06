@@ -74,4 +74,4 @@ def sampling1(samples_num, ground_truth):
     labels_loc = {}
     m = max(ground_truth)
     for i in range(m):
-        indexes = [j for j, x in enumerate(ground_trut
+        indexes = [j for j, x in enumerate(ground_truth.ravel().tolist()) if x =
