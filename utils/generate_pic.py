@@ -77,4 +77,5 @@ def sampling1(samples_num, ground_truth):
         indexes = [j for j, x in enumerate(ground_truth.ravel().tolist()) if x == i + 1]
         np.random.shuffle(indexes)
         labels_loc[i] = indexes
-        nb_v
+        nb_val = samples_num
+      
