@@ -78,4 +78,5 @@ def sampling1(samples_num, ground_truth):
         np.random.shuffle(indexes)
         labels_loc[i] = indexes
         nb_val = samples_num
-      
+        train[i] = indexes[:nb_val]
+ 
