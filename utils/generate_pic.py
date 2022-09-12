@@ -79,4 +79,5 @@ def sampling1(samples_num, ground_truth):
         labels_loc[i] = indexes
         nb_val = samples_num
         train[i] = indexes[:nb_val]
-        test[i] = indexes[
+        test[i] = indexes[nb_val:]
+    train_indexe
