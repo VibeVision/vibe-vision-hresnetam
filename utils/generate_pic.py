@@ -82,3 +82,4 @@ def sampling1(samples_num, ground_truth):
         test[i] = indexes[nb_val:]
     train_indexes = []
     test_indexes = []
+    for i in range(m):
