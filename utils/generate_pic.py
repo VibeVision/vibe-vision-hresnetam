@@ -84,4 +84,5 @@ def sampling1(samples_num, ground_truth):
     test_indexes = []
     for i in range(m):
         train_indexes += train[i]
-        test_
+        test_indexes += test[i]
+    np.ra
