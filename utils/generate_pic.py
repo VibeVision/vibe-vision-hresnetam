@@ -87,4 +87,4 @@ def sampling1(samples_num, ground_truth):
         test_indexes += test[i]
     np.random.shuffle(train_indexes)
     np.random.shuffle(test_indexes)
-    
+    return train_indexes, test
