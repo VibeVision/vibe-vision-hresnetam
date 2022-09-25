@@ -90,4 +90,6 @@ def sampling1(samples_num, ground_truth):
     return train_indexes, test_indexes
 
 def sampling2(ground_truth, proportion):
-  
+    train = {}
+    test = {}
+ 
