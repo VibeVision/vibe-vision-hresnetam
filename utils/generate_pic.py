@@ -89,4 +89,5 @@ def sampling1(samples_num, ground_truth):
     np.random.shuffle(test_indexes)
     return train_indexes, test_indexes
 
-def sampling2
+def sampling2(ground_truth, proportion):
+  
