@@ -92,4 +92,5 @@ def sampling1(samples_num, ground_truth):
 def sampling2(ground_truth, proportion):
     train = {}
     test = {}
- 
+    labels_loc = {}
+    m = max(g
