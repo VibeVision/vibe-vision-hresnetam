@@ -94,4 +94,5 @@ def sampling2(ground_truth, proportion):
     test = {}
     labels_loc = {}
     m = max(ground_truth)
-    for i in 
+    for i in range(m):
+        indexes = [j for j, x 
