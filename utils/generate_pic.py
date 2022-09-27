@@ -93,4 +93,5 @@ def sampling2(ground_truth, proportion):
     train = {}
     test = {}
     labels_loc = {}
-    m = max(g
+    m = max(ground_truth)
+    for i in 
