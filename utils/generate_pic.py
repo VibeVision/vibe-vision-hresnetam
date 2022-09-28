@@ -95,4 +95,4 @@ def sampling2(ground_truth, proportion):
     labels_loc = {}
     m = max(ground_truth)
     for i in range(m):
-        indexes = [j for j, x in enumerate(ground_truth.ravel().
+        indexes = [j for j, x in enumerate(ground_truth.ravel().tolist()) if x == i + 1]
