@@ -97,4 +97,4 @@ def sampling2(ground_truth, proportion):
     for i in range(m):
         indexes = [j for j, x in enumerate(ground_truth.ravel().tolist()) if x == i + 1]
         np.random.shuffle(indexes)
-        l
+        labels_loc[i] = indexes
