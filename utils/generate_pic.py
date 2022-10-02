@@ -99,4 +99,4 @@ def sampling2(ground_truth, proportion):
         np.random.shuffle(indexes)
         labels_loc[i] = indexes
         if proportion != 1:
-  
+            nb_val = max(int
