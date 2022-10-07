@@ -100,3 +100,5 @@ def sampling2(ground_truth, proportion):
         labels_loc[i] = indexes
         if proportion != 1:
             nb_val = max(int((1 - proportion) * len(indexes)), 3)
+        else:
+            
