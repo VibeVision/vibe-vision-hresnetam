@@ -102,4 +102,5 @@ def sampling2(ground_truth, proportion):
             nb_val = max(int((1 - proportion) * len(indexes)), 3)
         else:
             nb_val = 0
-        train[
+        train[i] = indexes[:nb_val]
+        t
