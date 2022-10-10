@@ -105,4 +105,5 @@ def sampling2(ground_truth, proportion):
         train[i] = indexes[:nb_val]
         test[i] = indexes[nb_val:]
     train_indexes = []
-    test_
+    test_indexes = []
+    for i in range
