@@ -108,4 +108,5 @@ def sampling2(ground_truth, proportion):
     test_indexes = []
     for i in range(m):
         train_indexes += train[i]
-        test_in
+        test_indexes += test[i]
+    np.ran
