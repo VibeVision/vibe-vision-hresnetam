@@ -110,4 +110,5 @@ def sampling2(ground_truth, proportion):
         train_indexes += train[i]
         test_indexes += test[i]
     np.random.shuffle(train_indexes)
+    np.random.shuffle(test_indexes)
    
