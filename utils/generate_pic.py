@@ -113,4 +113,4 @@ def sampling2(ground_truth, proportion):
     np.random.shuffle(test_indexes)
     return train_indexes, test_indexes
 
-d
+def aa_and_each_accurac
