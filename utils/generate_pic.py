@@ -111,4 +111,6 @@ def sampling2(ground_truth, proportion):
         test_indexes += test[i]
     np.random.shuffle(train_indexes)
     np.random.shuffle(test_indexes)
-    return train_i
+    return train_indexes, test_indexes
+
+d
