@@ -113,4 +113,5 @@ def sampling2(ground_truth, proportion):
     np.random.shuffle(test_indexes)
     return train_indexes, test_indexes
 
-def aa_and_each_accurac
+def aa_and_each_accuracy(confusion_matrix):
+    list
