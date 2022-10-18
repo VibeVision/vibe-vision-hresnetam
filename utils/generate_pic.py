@@ -114,4 +114,5 @@ def sampling2(ground_truth, proportion):
     return train_indexes, test_indexes
 
 def aa_and_each_accuracy(confusion_matrix):
-    list_diag = np.diag(confusion_matri
+    list_diag = np.diag(confusion_matrix)
+    list_raw_sum = np.sum(confusio
