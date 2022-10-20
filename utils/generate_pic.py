@@ -115,4 +115,5 @@ def sampling2(ground_truth, proportion):
 
 def aa_and_each_accuracy(confusion_matrix):
     list_diag = np.diag(confusion_matrix)
-    list_raw_sum = np.sum(confusio
+    list_raw_sum = np.sum(confusion_matrix, axis=1)
+    each_acc
