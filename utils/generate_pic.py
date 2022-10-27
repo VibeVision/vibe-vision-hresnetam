@@ -118,4 +118,7 @@ def aa_and_each_accuracy(confusion_matrix):
     list_raw_sum = np.sum(confusion_matrix, axis=1)
     each_acc = np.nan_to_num(truediv(list_diag, list_raw_sum))
     average_acc = np.mean(each_acc)
-    return each_acc, ave
+    return each_acc, average_acc
+
+
+def classification_map(
