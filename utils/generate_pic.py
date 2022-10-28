@@ -121,4 +121,5 @@ def aa_and_each_accuracy(confusion_matrix):
     return each_acc, average_acc
 
 
-def classification_map(map, ground_truth, dpi, 
+def classification_map(map, ground_truth, dpi, save_path):
+    fig = plt.f
