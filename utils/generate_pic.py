@@ -122,4 +122,4 @@ def aa_and_each_accuracy(confusion_matrix):
 
 
 def classification_map(map, ground_truth, dpi, save_path):
-    fig = plt.f
+    fig = plt.figure(frameon=False
