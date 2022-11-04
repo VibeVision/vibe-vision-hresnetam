@@ -124,3 +124,5 @@ def aa_and_each_accuracy(confusion_matrix):
 def classification_map(map, ground_truth, dpi, save_path):
     fig = plt.figure(frameon=False)
     fig.set_size_inches(ground_truth.shape[1] * 2.0 / dpi, ground_truth.shape[0] * 2.0 / dpi)
+
+    ax = plt.Axes(fig, [0., 0., 
