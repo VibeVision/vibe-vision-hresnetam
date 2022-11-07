@@ -129,4 +129,6 @@ def classification_map(map, ground_truth, dpi, save_path):
     ax.set_axis_off()
     ax.xaxis.set_visible(False)
     ax.yaxis.set_visible(False)
- 
+    fig.add_axes(ax)
+
+    ax.im
