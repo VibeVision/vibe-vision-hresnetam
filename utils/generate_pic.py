@@ -128,4 +128,5 @@ def classification_map(map, ground_truth, dpi, save_path):
     ax = plt.Axes(fig, [0., 0., 1., 1.])
     ax.set_axis_off()
     ax.xaxis.set_visible(False)
-    ax.yaxis.se
+    ax.yaxis.set_visible(False)
+ 
