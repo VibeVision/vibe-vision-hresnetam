@@ -131,4 +131,5 @@ def classification_map(map, ground_truth, dpi, save_path):
     ax.yaxis.set_visible(False)
     fig.add_axes(ax)
 
-    ax.im
+    ax.imshow(map)
+    fig.savefig(save_
