@@ -132,4 +132,6 @@ def classification_map(map, ground_truth, dpi, save_path):
     fig.add_axes(ax)
 
     ax.imshow(map)
-    fig.savefig(save_
+    fig.savefig(save_path, dpi=dpi)
+
+    return 
