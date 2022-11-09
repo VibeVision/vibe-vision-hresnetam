@@ -134,4 +134,7 @@ def classification_map(map, ground_truth, dpi, save_path):
     ax.imshow(map)
     fig.savefig(save_path, dpi=dpi)
 
-    return 
+    return 0
+
+
+def list_to_colo
