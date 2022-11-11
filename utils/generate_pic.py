@@ -138,4 +138,5 @@ def classification_map(map, ground_truth, dpi, save_path):
 
 
 def list_to_colormap(x_list):
-    y = np.zeros((
+    y = np.zeros((x_list.shape[0], 3))
+    f
