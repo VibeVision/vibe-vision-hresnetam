@@ -141,4 +141,5 @@ def list_to_colormap(x_list):
     y = np.zeros((x_list.shape[0], 3))
     for index, item in enumerate(x_list):
         if item == 0:
-            y[index] = np.ar
+            y[index] = np.array([0, 0, 0]) / 255.
+     
