@@ -157,4 +157,6 @@ def list_to_colormap(x_list):
         if item == 7:
             y[index] = np.array([150, 75, 255])/255.
         if item == 8:
-            y[index] = np.array([150, 75, 75])/2
+            y[index] = np.array([150, 75, 75])/255.
+        if item == 9:
+   
