@@ -185,4 +185,6 @@ def list_to_colormap(x_list):
         if item == 21:
             y[index] = np.array([0, 128, 0]) / 255.
         if item == 22:
-            y[index] = np.array([0, 0, 128]) /
+            y[index] = np.array([0, 0, 128]) / 255.
+        if item == 23:
+      
