@@ -191,4 +191,4 @@ def list_to_colormap(x_list):
     return y
 
 
-def generate_ite
+def generate_iter(TRAIN_SIZE, train_ind
