@@ -194,4 +194,4 @@ def list_to_colormap(x_list):
 def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE, total_indices, VAL_SIZE,
                   whole_data, PATCH_LENGTH, padded_data, INPUT_DIMENSION, batch_size, gt):
 
-    g
+    gt_all = gt[total_indices]
