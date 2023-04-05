@@ -195,4 +195,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
                   whole_data, PATCH_LENGTH, padded_data, INPUT_DIMENSION, batch_size, gt):
 
     gt_all = gt[total_indices] - 1
-    y_train = gt[train
+    y_train = gt[train_indices] - 1
+    y_test = gt[test
