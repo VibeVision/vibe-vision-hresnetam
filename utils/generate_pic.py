@@ -199,4 +199,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     y_test = gt[test_indices] - 1
 
     all_data = extract_samll_cubic.select_small_cubic(TOTAL_SIZE, total_indices, whole_data,
-                                                
+                                                      PATCH_LENGTH, padded_d
