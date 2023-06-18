@@ -201,4 +201,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     all_data = extract_samll_cubic.select_small_cubic(TOTAL_SIZE, total_indices, whole_data,
                                                       PATCH_LENGTH, padded_data, INPUT_DIMENSION)
 
-   
+    train_data = extract_samll_c
