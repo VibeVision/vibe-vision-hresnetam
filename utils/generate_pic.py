@@ -205,4 +205,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
                                                         PATCH_LENGTH, padded_data, INPUT_DIMENSION)
     test_data = extract_samll_cubic.select_small_cubic(TEST_SIZE, test_indices, whole_data,
                                                        PATCH_LENGTH, padded_data, INPUT_DIMENSION)
-    x_train = 
+    x_train = train_data.reshape(train_da
