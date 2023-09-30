@@ -211,4 +211,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     x_val = x_test_all[-VAL_SIZE:]
     y_val = y_test[-VAL_SIZE:]
 
- 
+    x_test = x_test_all[:-VAL_SI
