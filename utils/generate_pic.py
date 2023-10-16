@@ -215,4 +215,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     y_test = y_test[:-VAL_SIZE]
 
     x1_tensor_train = torch.from_numpy(x_train).type(torch.FloatTensor).unsqueeze(1)
-    y1_tensor_train = torch.from_numpy(y_train).ty
+    y1_tensor_train = torch.from_numpy(y_train).type(torch.FloatTensor)
+    torch_da
