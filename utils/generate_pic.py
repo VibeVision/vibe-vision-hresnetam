@@ -220,3 +220,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
 
     x1_tensor_valida = torch.from_numpy(x_val).type(torch.FloatTensor).unsqueeze(1)
     y1_tensor_valida = torch.from_numpy(y_val).type(torch.FloatTensor)
+    torch_dataset_valida 
