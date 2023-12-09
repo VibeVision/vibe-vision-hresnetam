@@ -223,4 +223,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     torch_dataset_valida = Data.TensorDataset(x1_tensor_valida, y1_tensor_valida)
 
     x1_tensor_test = torch.from_numpy(x_test).type(torch.FloatTensor).unsqueeze(1)
-    y1_tensor_test = torch.from_n
+    y1_tensor_test = torch.from_numpy(y_test).type(torch.FloatTensor)
+   
