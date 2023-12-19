@@ -233,4 +233,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
 
 
     train_iter = Data.DataLoader(
-        dataset=torch_datas
+        dataset=torch_dataset_train,
+        batch_si
