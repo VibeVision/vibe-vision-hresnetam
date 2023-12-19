@@ -232,4 +232,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     torch_dataset_all = Data.TensorDataset(all_tensor_data, all_tensor_data_label)
 
 
-    
+    train_iter = Data.DataLoader(
+     
