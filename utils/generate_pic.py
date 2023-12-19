@@ -228,4 +228,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
 
     all_data.reshape(all_data.shape[0], all_data.shape[1], all_data.shape[2], INPUT_DIMENSION)
     all_tensor_data = torch.from_numpy(all_data).type(torch.FloatTensor).unsqueeze(1)
-    all_tensor_data_label = torch.from_numpy(gt_all).type(torch.Fl
+    all_tensor_data_label = torch.from_numpy(gt_all).type(torch.FloatTensor)
+    torch_dataset_all = Data.
