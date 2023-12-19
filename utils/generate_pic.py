@@ -227,4 +227,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     torch_dataset_test = Data.TensorDataset(x1_tensor_test,y1_tensor_test)
 
     all_data.reshape(all_data.shape[0], all_data.shape[1], all_data.shape[2], INPUT_DIMENSION)
-    all_tensor_data = torch.from_numpy(all_data).ty
+    all_tensor_data = torch.from_numpy(all_data).type(torch.FloatTensor).unsque
