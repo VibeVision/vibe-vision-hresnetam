@@ -237,4 +237,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
         batch_size=batch_size,
         shuffle=True,
         num_workers=0,
-  
+    )
+    valiada_it
