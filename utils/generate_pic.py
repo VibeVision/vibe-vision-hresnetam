@@ -238,4 +238,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
         shuffle=True,
         num_workers=0,
     )
-    valiada_it
+    valiada_iter = Data.DataLoader(
+        
