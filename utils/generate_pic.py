@@ -248,4 +248,6 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
         dataset=torch_dataset_test,
         batch_size=batch_size,
         shuffle=False,
-        num_workers
+        num_workers=0,
+    )
+    all_iter = Da
