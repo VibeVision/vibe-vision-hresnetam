@@ -250,4 +250,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
         shuffle=False,
         num_workers=0,
     )
-    all_iter = Da
+    all_iter = Data.DataLoader(
+        dataset=torch
