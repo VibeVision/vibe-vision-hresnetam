@@ -256,4 +256,6 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
         shuffle=False,
         num_workers=0,
     )
-    return train_iter, valiada_iter, test_it
+    return train_iter, valiada_iter, test_iter, all_iter #, y_test
+
+def ge
