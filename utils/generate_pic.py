@@ -258,4 +258,4 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
     )
     return train_iter, valiada_iter, test_iter, all_iter #, y_test
 
-def generate_png(all_iter, net, gt_hsi, Data
+def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indic
