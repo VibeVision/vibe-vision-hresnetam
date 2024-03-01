@@ -260,4 +260,5 @@ def generate_iter(TRAIN_SIZE, train_indices, TEST_SIZE, test_indices, TOTAL_SIZE
 
 def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     pred_test = []
-    for X
+    for X, y in all_iter:
+        X 
