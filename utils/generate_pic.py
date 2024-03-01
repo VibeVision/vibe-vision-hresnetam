@@ -263,4 +263,4 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     for X, y in all_iter:
         X = X.to(device)
         net.eval()
-        pred_test.extend(np.arra
+        pred_test.extend(np.array(net(X).cpu().argmax(axis=1))
