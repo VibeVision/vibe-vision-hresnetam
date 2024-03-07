@@ -266,4 +266,5 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
         pred_test.extend(np.array(net(X).cpu().argmax(axis=1)))
 
     gt = gt_hsi.flatten()
-    x_label = 
+    x_label = np.zeros(gt.shape)
+    f
