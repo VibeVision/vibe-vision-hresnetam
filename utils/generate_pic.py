@@ -267,4 +267,5 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
 
     gt = gt_hsi.flatten()
     x_label = np.zeros(gt.shape)
-    for i in range(len(pred_te
+    for i in range(len(pred_test)):
+        pred_tes
