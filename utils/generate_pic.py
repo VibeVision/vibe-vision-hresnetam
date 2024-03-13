@@ -269,4 +269,4 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     x_label = np.zeros(gt.shape)
     for i in range(len(pred_test)):
         pred_test[i] = pred_test[i] + 1
-    
+    x_label[total_indices] =
