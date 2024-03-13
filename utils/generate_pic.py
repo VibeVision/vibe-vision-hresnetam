@@ -270,4 +270,6 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     for i in range(len(pred_test)):
         pred_test[i] = pred_test[i] + 1
     x_label[total_indices] = pred_test
-    x = np.ravel(x_la
+    x = np.ravel(x_label)
+
+    y_list = li
