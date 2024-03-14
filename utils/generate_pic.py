@@ -275,4 +275,4 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     y_list = list_to_colormap(x)
     y_gt = list_to_colormap(gt)
 
-    y_re
+    y_re = np.reshape(y_list,
