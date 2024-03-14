@@ -272,4 +272,5 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     x_label[total_indices] = pred_test
     x = np.ravel(x_label)
 
-    y_list = li
+    y_list = list_to_colormap(x)
+    y_g
