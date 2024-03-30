@@ -279,4 +279,4 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
     gt_re = np.reshape(y_gt, (gt_hsi.shape[0], gt_hsi.shape[1], 3))
 
     path = './'
-    classifi
+    classification_map(y_re, gt_h
