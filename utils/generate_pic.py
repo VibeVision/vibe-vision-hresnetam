@@ -280,4 +280,5 @@ def generate_png(all_iter, net, gt_hsi, Dataset, device, total_indices):
 
     path = './'
     classification_map(y_re, gt_hsi, 600,
-                       path + '/classification_maps/' + Dataset + '_' + net.
+                       path + '/classification_maps/' + Dataset + '_' + net.name +  '.eps')
+    classi
