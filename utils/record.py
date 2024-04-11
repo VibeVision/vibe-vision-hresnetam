@@ -8,4 +8,5 @@ Created on Wed Oct 21 21:10:24 2020
 import numpy as np
 
 
-def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, testing_time_ae, 
+def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, testing_time_ae, path):
+    f = open(path,
