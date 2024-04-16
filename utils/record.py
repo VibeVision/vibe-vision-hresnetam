@@ -12,4 +12,5 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     f = open(path, 'a')
 
     sentence0 = 'OAs for each iteration are:' + str(oa_ae) + '\n'
- 
+    f.write(sentence0)
+    s
