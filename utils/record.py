@@ -16,4 +16,5 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     sentence1 = 'AAs for each iteration are:' + str(aa_ae) + '\n'
     f.write(sentence1)
     sentence2 = 'KAPPAs for each iteration are:' + str(kappa_ae) + '\n' + '\n'
-    f.write(senten
+    f.write(sentence2)
+    sentence3 = 'mea
