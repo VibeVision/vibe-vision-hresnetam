@@ -18,4 +18,5 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     sentence2 = 'KAPPAs for each iteration are:' + str(kappa_ae) + '\n' + '\n'
     f.write(sentence2)
     sentence3 = 'mean_OA ± std_OA is: ' + str(np.mean(oa_ae)) + ' ± ' + str(np.std(oa_ae)) + '\n'
-    f.wri
+    f.write(sentence3)
+    sen
