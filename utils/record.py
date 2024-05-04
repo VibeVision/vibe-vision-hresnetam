@@ -21,4 +21,4 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     f.write(sentence3)
     sentence4 = 'mean_AA ± std_AA is: ' + str(np.mean(aa_ae)) + ' ± ' + str(np.std(aa_ae)) + '\n'
     f.write(sentence4)
-    sentence5 = 'mean_KAPPA ± std_KAPPA
+    sentence5 = 'mean_KAPPA ± std_KAPPA is: ' + str(np.mean(kappa_ae))
