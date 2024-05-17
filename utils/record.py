@@ -24,4 +24,5 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     sentence5 = 'mean_KAPPA ± std_KAPPA is: ' + str(np.mean(kappa_ae)) + ' ± ' + str(np.std(kappa_ae)) + '\n' + '\n'
     f.write(sentence5)
     sentence6 = 'Total average Training time is: ' + str(np.sum(training_time_ae)) + '\n'
-    f.write(sentence6
+    f.write(sentence6)
+    sentence7 = 'Total aver
