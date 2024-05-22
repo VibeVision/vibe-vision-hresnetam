@@ -25,4 +25,4 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     f.write(sentence5)
     sentence6 = 'Total average Training time is: ' + str(np.sum(training_time_ae)) + '\n'
     f.write(sentence6)
-    sentence7 = 'Total average Testing time is: ' + st
+    sentence7 = 'Total average Testing time is: ' + str(np.sum(testing_time_ae))
