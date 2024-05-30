@@ -29,4 +29,4 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     f.write(sentence7)
 
     element_mean = np.mean(element_acc_ae, axis=0)
-    element_std = n
+    element_std = np.std(element_acc_ae, axis=0
