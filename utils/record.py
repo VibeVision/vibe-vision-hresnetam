@@ -31,4 +31,5 @@ def record_output(oa_ae, aa_ae, kappa_ae, element_acc_ae, training_time_ae, test
     element_mean = np.mean(element_acc_ae, axis=0)
     element_std = np.std(element_acc_ae, axis=0)
     sentence8 = "Mean of all elements in confusion matrix: " + str(element_mean) + '\n'
-    f.write(
+    f.write(sentence8)
+    sentence9 = 
